@@ -378,6 +378,8 @@ header .logo-span {
 .team-icon-button {
   display: block;
   border: none;
+  padding: 0;
+  margin: 0;
   border-radius: 50%;
   background-color: var(--main-bg-color);
   width: 44px;
@@ -583,6 +585,8 @@ footer .logo {
 
 .footer-icon-button {
   display: block;
+  padding: 0;
+  margin: 0;
   border: none;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
