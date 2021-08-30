@@ -158,15 +158,20 @@ header .logo-span {
   color: var(--primary-text-color);
 }
 
-.nav-contacts .contact-link::before {
-  display: inline-block;
-  content: "";
-  margin-right: 10px;
-}
-
 .nav-contacts .link:focus,
 .nav-contacts .link:hover {
   color: var(--accent-text-color);
+}
+
+.icon-mail {
+  width: 16px;
+  margin-right: 10px;
+  fill: black;
+}
+
+.icon-phone {
+  width: 12px;
+  fill: ;
 }
 
 .nav-contacts .footer-contacts {
@@ -253,7 +258,9 @@ header .logo-span {
   margin-right: 0;
 }
 
-.advantage-list li::before {
+.advntg-list-item::before {
+  background-color: cyan;
+
   content: "";
   display: block;
   width: 270px;
@@ -263,6 +270,30 @@ header .logo-span {
 
   background: #f5f4fa;
   border-radius: 4px;
+}
+
+.advntg-list-item:nth-child(1)::before {
+  background-image: url(../images/iconAntenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advntg-list-item:nth-child(2)::before {
+  background-image: url(../images/iconClock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advntg-list-item:nth-child(3)::before {
+  background-image: url(../images/iconDiagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.advntg-list-item:nth-child(4)::before {
+  background-image: url(../images/iconAstronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .advantage h3 {
@@ -403,6 +434,7 @@ header .logo-span {
 
 .icon-clients {
   display: flex;
+  list-style: none;
 }
 
 .list-item-client:not(:last-child) {
@@ -542,4 +574,53 @@ footer .logo {
 
 .footer-list > .list-item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-roll {
+  display: flex;
+}
+
+.adrs-container {
+  margin-right: 70px;
+}
+
+.footer-cont-list {
+  display: flex;
+  list-style: none;
+}
+
+.footer-icon-button {
+  display: block;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  fill: var(--button-text-color);
+  cursor: pointer;
+}
+
+.footer-icon-button:hover {
+  fill: #ffffff;
+  background-color: var(--button-bg-color);
+}
+
+.footer-contact-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-cont-list .icon {
+  height: 44px;
+}
+
+.link-container > h2 {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--button-text-color);
 }
