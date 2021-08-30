@@ -15,39 +15,44 @@
 </head>
 
 <body>
-    <!-- Хедер веб сайта -->
-    <header class="header">
-        <div class="header-section container">
-            <a class="link logo logo-header" href="./index.html">Web<span class="logo-span link">Studio</span></a>
-    
-            <!-- Навигация  -->
-            <nav class="nav">
-                <ul class="nav-list list">
-                    <li class="list-item">
-                        <a class="link" href="">Студия</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="link" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="list-item">
-                        <a class="link" href="">Контакты</a>
-                    </li>
-                </ul>
-            </nav>
-    
+<!-- Хедер веб сайта -->
+<header class="header">
+    <div class="header container">
+        <a class="link logo logo-header" href="./index.html">Web<span class="logo-span link">Studio</span></a>
+
+        <!-- Навигация  -->
+        <nav class="nav">
+            <ul class="nav-list list">
+                <li class="nav-list-item">
+                    <a class="link" href="">Студия</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="nav-list-item">
+                    <a class="link" href="">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+
         <!-- Контакты -->
         <div class="nav-contacts">
             <ul class="contact-list list">
-                <li class="list-item">
-                    <a class="link contact-link" href="">info@devstudio.com</a>
+                <li class="cont-list-item">
+                    <a class="link contact-link" href="">
+                        <svg class="icon-mail" width="16" height="12">
+                            <use href="./images/icon-sprite.svg#iconEnvelope"></use>
+                        </svg>
+                        info@devstudio.com</a>
                 </li>
-                <li class="list-item">
+                <li class="cont-list-item">
                     <a class="link contact-link" href="">+38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
-    
-    </header>
+    </div>
+
+</header>
 
     <!-- Основной контент сайта -->
     <main>
@@ -218,18 +223,58 @@
 <!-- Подвал веб сайта -->
 <footer class="footer section">
     <div class="container">
-        <a class="link logo" href="./index.html">Web<span class="logo-span link">Studio</span></a>
-        <ul class="footer-list list">
-            <li class="list-item">
-                <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
-            </li>
-            <li class="list-item">
-                <a class="link footer-contacts" href="">info@example.com</a>
-            </li>
-            <li class="list-item">
-                <a class="link footer-contacts" href="">+38 099 111 11 11</a>
-            </li>
-        </ul>
+        <div class="footer-roll">
+
+            <!-- Лого и адрес -->
+            <div class="adrs-container">
+                <a class="link logo" href="./index.html">Web<span class="logo-span link">Studio</span></a>
+                <ul class="footer-list list">
+                    <li class="list-item">
+                        <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
+                    </li>
+                    <li class="list-item">
+                        <a class="link footer-contacts" href="">info@example.com</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="link footer-contacts" href="">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- ССылки на соцсети -->
+            <div class="link-container">
+                <h2>Присоидиняйтесь</h2>
+                <ul class="footer-cont-list">
+                    <li class="footer-contact-item">
+                        <button class="footer-icon-button">
+                            <svg class="icon" width="20" ; heigth="20">
+                                <use href="./images/icon-sprite.svg#iconInstagram"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="footer-contact-item">
+                        <button class="footer-icon-button">
+                            <svg class="icon" width="20" ; heigth="20">
+                                <use href="./images/icon-sprite.svg#iconTwitter"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="footer-contact-item">
+                        <button class="footer-icon-button">
+                            <svg class="icon" width="20" ; heigth="20">
+                                <use href="./images/icon-sprite.svg#iconFacebook"></use>
+                            </svg>
+                        </button>
+                    </li>
+                    <li class="footer-contact-item">
+                        <button class="footer-icon-button">
+                            <svg class="icon" width="20" ; heigth="20">
+                                <use href="./images/icon-sprite.svg#iconLinkedin"></use>
+                            </svg>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 </footer>

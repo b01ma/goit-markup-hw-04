@@ -102,18 +102,19 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+
   border-bottom: 1px solid #ececec;
 }
-
-.header-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.icon-mail,
+.icon-phone {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 /* Хэдэр/Логотип, */
 .logo-header {
-  display: block;
   margin-right: 93px;
   padding-top: 24px;
   padding-bottom: 25px;
@@ -139,17 +140,12 @@ header .logo-span {
   margin-left: auto;
 }
 
-.nav-list .list-item,
-.nav-contacts .list-item {
-  display: block;
+.nav-list-item:not(:last-child),
+.cont-list-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.list-item:last-child {
-  margin-right: 0;
-}
-
-.list-item .link {
+.header a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -161,21 +157,6 @@ header .logo-span {
 .nav-contacts .link:focus,
 .nav-contacts .link:hover {
   color: var(--accent-text-color);
-}
-
-.icon-mail {
-  width: 16px;
-  margin-right: 10px;
-  fill: black;
-}
-
-.icon-phone {
-  width: 12px;
-  fill: ;
-}
-
-.nav-contacts .footer-contacts {
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Герой */
@@ -481,6 +462,7 @@ header .logo-span {
   border: 0;
   border-radius: 4px;
   background-color: #f5f4fa;
+  overflow: hidden;
 
   display: block;
   padding: 6px 22px;
@@ -498,6 +480,8 @@ header .logo-span {
 .porfolio-btn:focus {
   background-color: var(--button-bg-color);
   color: #ffffff;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /* Примеры работ */
@@ -522,6 +506,13 @@ header .logo-span {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
 }
 
 .projects h2 {
