@@ -385,6 +385,7 @@ header .logo-span {
   object-fit: contain;
   fill: var(--icon-basic-color);
   cursor: pointer;
+  align-items: center;
 }
 
 .team-icon-button:hover {
@@ -393,7 +394,7 @@ header .logo-span {
 }
 
 .team-contact-item .icon {
-  height: 44px;
+  align-items: center;
 }
 /* Постоянные клиенты */
 
@@ -599,10 +600,6 @@ footer .logo {
 
 .footer-contact-item:not(:last-child) {
   margin-right: 10px;
-}
-
-.footer-cont-list .icon {
-  height: 44px;
 }
 
 .link-container > h2 {
