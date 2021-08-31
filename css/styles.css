@@ -140,6 +140,16 @@ header .logo-span {
   margin-left: auto;
 }
 
+.icon-mail,
+.icon-phone {
+  display: block;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
 .nav-list-item:not(:last-child),
 .cont-list-item:not(:last-child) {
   margin-right: 50px;
