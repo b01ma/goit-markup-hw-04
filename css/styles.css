@@ -142,7 +142,7 @@ header .logo-span {
 
 .icon-mail,
 .icon-phone {
-  display: block;
+  display: flex;
 }
 
 .contact-link {
@@ -155,7 +155,7 @@ header .logo-span {
   margin-right: 50px;
 }
 
-.header a {
+.nav a {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -179,7 +179,7 @@ header .logo-span {
   max-width: 1600px;
   margin-right: auto;
   margin-left: auto;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(../images/herobanner.jpeg);
 
   background-position: center;
@@ -385,8 +385,10 @@ header .logo-span {
   margin-right: 10px;
 }
 
-.team-icon-button {
-  display: block;
+.team-icon-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
   padding: 0;
   margin: 0;
@@ -397,10 +399,10 @@ header .logo-span {
   object-fit: contain;
   fill: var(--icon-basic-color);
   cursor: pointer;
-  align-items: center;
 }
 
-.team-icon-button:hover {
+.team-icon-link:hover,
+.team-icon-link:focus {
   fill: #ffffff;
   background-color: var(--button-bg-color);
 }
@@ -449,7 +451,8 @@ header .logo-span {
   fill: var(--icon-basic-color);
 }
 
-.client-button:hover {
+.client-button:hover,
+.client-button:focus {
   fill: var(--icon-focus-color);
   border-color: var(--icon-focus-color);
 }
@@ -490,7 +493,7 @@ header .logo-span {
 }
 
 .portfolio-btn:hover,
-.porfolio-btn:focus {
+.portfolio-btn:focus {
   background-color: var(--button-bg-color);
   color: #ffffff;
 
@@ -593,8 +596,10 @@ footer .logo {
   list-style: none;
 }
 
-.footer-icon-button {
-  display: block;
+.footer-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0;
   margin: 0;
   border: none;
@@ -607,7 +612,8 @@ footer .logo {
   cursor: pointer;
 }
 
-.footer-icon-button:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   fill: #ffffff;
   background-color: var(--button-bg-color);
 }
